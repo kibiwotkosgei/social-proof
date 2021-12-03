@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ### Primary */
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  /* ### Neutral */
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  background-image: url("../images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  margin: 0 1.25rem;
+}
+
+.usercontent {
+  text-align: center;
+  margin-top: 5.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.usercontent h1 {
+  color: var(--VeryDarkMagenta);
+  padding-bottom: 1.25rem;
+}
+
+.user {
+  background-color: var(--VeryDarkMagenta);
+  padding: 30px;
+  margin-bottom: 1rem;
+  color: var(--LightGrayishMagenta);
+  border-radius: 10px;
+}
+
+span {
+  color: var(--SoftPink);
+  font-weight: 400;
+}
+
+.usertitle {
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.imagediv {
+  width: 40px;
+}
+
+.usertitle img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.usertitle p {
+  padding: 3px 10px;
+  font-weight: 700;
+}
+
+.rating {
+  margin: 1.25rem 0;
+  border-radius: 10px;
+  background-color: var(--LightGrayishMagenta);
+  height: 3.5rem padding: 10px;
+}
+
+.rating p {
+  font-weight: 700;
+  color: var(--VeryDarkMagenta);
+  margin-left: 24px;
+}
+
+.attribution {
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media(min-width:650px) {
+  .usercontent, .users {
+    max-width: 1000px;
+    margin: 5.25rem auto;
+  }
+
+  body {
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+    /* background-image: url("../images/bg-pattern-bottom-desktop.svg"); */
+    /* background-position: top right, bottom left; */
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width:800px) {
+  .usercontent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+
+  .usercontent_body {
+    text-align: left;
+    width: 40%;
+  }
+
+  .rating {
+    text-align: left;
+    display: flex;
+    padding: 1.5rem 3rem;
+  }
+
+  .rating img {
+    margin-right: .4rem;
+  }
+
+  .rating1 {
+    transform: translateX(-45px);
+  }
+
+  .rating2 {
+    transform: translateX(-25px);
+  }
+
+  .users {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .user {
+    margin-right: 1.25rem;
+  }
+
+  .user2 {
+    transform: translateY(30px);
+  }
+
+  .user3 {
+    transform: translateY(60px);
+  }
+}
